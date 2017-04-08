@@ -1,0 +1,23 @@
+<html>
+    
+    <head>
+        
+    </head>
+    <body>
+        
+        <pre id="target">Move the mouse over me!</pre>
+
+        <script>
+            window.onload = function() {
+                var target = document.getElementById("target");
+                target.onmousemove = target.onmousedown = showCoords;
+            };
+            function showCoords(event) {
+                document.getElementById("target").innerHTML =
+                + "screen : (" + event.screenX + ", " + event.screenY + ")\n"
+                + "client : (" + event.clientX + ", " + event.clientY + ")\n"
+                + "button : " + event.button;
+            }
+        </script>
+    </body>
+</html>
