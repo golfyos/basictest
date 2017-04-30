@@ -1,0 +1,401 @@
+body{
+    background-image: url(https://cdn.amctheatres.com/general/img/DP_1004_PremiumOffering_Dolby_bg.jpg);
+    background-attachment: fixed;
+}
+
+#login_main , #signup_main{
+    background-color: #66cc00;
+    font-size: 18px;
+    font-weight: bold;
+    float : right;
+    
+}
+
+/* input and signup modal */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    float : right;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: 20%;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cancelbtn2 {
+    width: 30%;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#login_btn, .signupbtn{
+    width: 30%;
+    float:right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.detail_login,.detail_signup{
+    padding: 20px;
+    overflow: auto;
+}
+
+.foot_login{
+    float: right;
+    padding: 10px;
+    width: 100%;
+}
+
+span.psw { 
+    padding-top: 40px;
+}
+
+/* The Modal (background) */
+.modal , #signup{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 2px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    overflow: auto;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn ,signupbtn{
+        width: 50%;
+    }
+}
+/*end of modal*/
+
+/*menubar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    /*background-color: #66cc00;*/
+    font-size: 23px;
+    font-weight: bold;
+    float: left;
+}
+
+li a , .dropbtn{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) , .dropdown:hover .dropbtn{
+    opacity: 0.8;
+}
+
+.active {
+    color: blue;
+}
+
+.logo{
+    background-image: url(https://i.ytimg.com/vi/JIJtCHuRXHw/maxresdefault.jpg);
+    line-height: 0.8;
+    font-family: fantasy;
+    float: left;
+    font-size: 70px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 0 gray;
+    opacity: 0.9;
+}
+.logo:first-letter{
+    color: gold;
+    font-size: 80px;
+}
+
+a {
+    color: #ccc;
+}
+
+/*search engine*/
+.form-wrapper {
+    float: right;
+    width: 450px;
+    padding: 10px;
+}
+
+.form-wrapper input {
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;      
+}
+
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #666666;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
+
+.form-wrapper button:hover{		
+    opacity: 0.8;
+}	
+
+.form-wrapper button:focus{   
+    background: #666666;    
+}
+
+.form-wrapper button:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #666666 transparent;
+    top: 12px;
+    left: -6px;
+}
+
+.form-wrapper button:hover:before{
+    opacity: 0.8;
+}
+
+.form-wrapper button:focus:before{
+    opacity: 0.8;
+}    
+
+.form-wrapper button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+/*end search engine*/
+
+li.list-group-item{
+    font-size: 18px;
+    background-color: #333;
+    border : 0;
+    line-height: 0.1;
+    text-align: left;
+}
+
+/*sort by menu*/
+#sort{
+    font-size: 16px;
+    font-style: italic;
+    color:#888;
+}
+.dropbtn {
+    background-color: #333;
+    color: #ccc;
+    padding: 5px;
+    font-size: 16px;
+    font-style: italic;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    float : right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #888;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #999}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+
+}
+/*end sort by menu*/
+
+/*poster movie*/
+.poster{
+    margin: 50px;
+    /*position: relative;*/
+}
+
+#movie{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#name_movies{
+    color: whitesmoke;
+    float: bottom;
+    font-size: 18px;
+    text-shadow: 1px 1px 0 gray;
+    font-weight: bold;
+}
+
+#name_movies:hover,img:hover{
+    opacity: 0.8; 
+}
+
+img{
+    width: 200px;
+    height: 300px;
+}
+/*end poster movie*/
+
+/*page num*/
+.pagination {
+    display: inline-block;
+    font-size: 16px;
+}
+.page_no{
+    text-align: center;
+}
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    color: green;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    opacity : 0.8;
+    border-radius: 5px;
+}
+/*end page num*/
